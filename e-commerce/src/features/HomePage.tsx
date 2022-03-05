@@ -137,6 +137,24 @@ function HomePage() {
             </div>
           </div>
         </section>
+        <section className='section-tours'>
+          <div className='u-center-text u-margin-bottom-big'>
+            <h2 className='heading-secondary'>MOst popular tours</h2>
+          </div>
+          <div className='row'>
+            <div className='col-1-of-3'>
+              <div className='card'>
+                <div className='card__side'>Card text</div>
+              </div>
+            </div>
+            <div className='col-1-of-3'>
+              <div className='card'>Card text</div>
+            </div>
+            <div className='col-1-of-3'>
+              <div className='card'>Card text</div>
+            </div>
+          </div>
+        </section>
       </main>
       {/* <section className='grid-test'>
         <div className='row'>
