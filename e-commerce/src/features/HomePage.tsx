@@ -11,6 +11,48 @@ function HomePage() {
     3. heading-primary--main so --main is a modifier
     */
     <div>
+      <div className='navigation'>
+        <input
+          type='checkbox'
+          className='navigation__checkbox'
+          id='navi-toggle'
+        />
+        <label htmlFor='navi-toggle' className='navigation__button'>
+          Menu
+        </label>
+        <div className='navigation__background'>&nbsp;</div>
+
+        <nav className='navigation_nav'>
+          <ul className='navigation__list'>
+            <li className='navigation__item'>
+              <a href='#' className='navigation__link'>
+                About Natous
+              </a>
+            </li>
+            <li className='navigation__item'>
+              <a href='#' className='navigation__link'>
+                Your benfits
+              </a>
+            </li>
+            <li className='navigation__item'>
+              <a href='#' className='navigation__link'>
+                Popular tours
+              </a>
+            </li>
+            <li className='navigation__item'>
+              <a href='#' className='navigation__link'>
+                Stories
+              </a>
+            </li>
+            <li className='navigation__item'>
+              <a href='#' className='navigation__link'>
+                Book now
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
       <div className='header'>
         <div className='header__logo-box'>
           <img
@@ -385,6 +427,62 @@ function HomePage() {
           </div>
         </section>
       </main>
+
+      <footer className='footer'>
+        <div className='footer__logo-box'>
+          <img
+            src='../assets/logo-green-2x.png'
+            alt='Full logo'
+            className='footer__logo'
+          />
+        </div>
+        <div className='row'>
+          <div className='col-1-of-2'>
+            <div className='footer__navigation'>
+              <ul className='footer__list'>
+                <li className='footer__item'>
+                  <a href='#' className='footer__link'>
+                    company
+                  </a>
+                </li>
+                <li className='footer__item'>
+                  <a href='#' className='footer__link'>
+                    COntact
+                  </a>
+                </li>
+                <li className='footer__item'>
+                  <a href='#' className='footer__link'>
+                    carreres
+                  </a>
+                </li>
+                <li className='footer__item'>
+                  <a href='#' className='footer__link'>
+                    Privacy policy
+                  </a>
+                </li>
+                <li className='footer__item'>
+                  <a href='#' className='footer__link'>
+                    Terms
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className='col-1-of-2'>
+            <p className='footer__copyright'>
+              Built my{' '}
+              <a href='#' className='footer__link'>
+                Asif
+              </a>{' '}
+              for learning purpose
+              <a href='#' className='footer__link'>
+                Advanced css and sass.
+              </a>
+              . Copyright &copy; by Asif Mohammad Ashique
+            </p>
+          </div>
+        </div>
+      </footer>
       {/* <section className='grid-test'>
         <div className='row'>
           <div className='col-1-of-2'>Col 1 of 2</div>
