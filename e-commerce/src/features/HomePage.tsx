@@ -18,35 +18,35 @@ function HomePage() {
           id='navi-toggle'
         />
         <label htmlFor='navi-toggle' className='navigation__button'>
-          Menu
+          <span className='navigation__icon'>&nbsp;</span>
         </label>
         <div className='navigation__background'>&nbsp;</div>
 
-        <nav className='navigation_nav'>
+        <nav className='navigation__nav'>
           <ul className='navigation__list'>
             <li className='navigation__item'>
               <a href='#' className='navigation__link'>
-                About Natous
+                <span>01</span> About Natous
               </a>
             </li>
             <li className='navigation__item'>
               <a href='#' className='navigation__link'>
-                Your benfits
+                <span>02</span> Your benfits
               </a>
             </li>
             <li className='navigation__item'>
               <a href='#' className='navigation__link'>
-                Popular tours
+                <span>03</span> Popular tours
               </a>
             </li>
             <li className='navigation__item'>
               <a href='#' className='navigation__link'>
-                Stories
+                <span>04</span> Stories
               </a>
             </li>
             <li className='navigation__item'>
               <a href='#' className='navigation__link'>
-                Book now
+                <span>05</span> Book now
               </a>
             </li>
           </ul>
@@ -67,7 +67,7 @@ function HomePage() {
             <span className='heading-primary--sub'>is where life happens</span>
           </h1>
 
-          <a href='#' className='btn btn--white btn--animated'>
+          <a href='#section-tours' className='btn btn--white btn--animated'>
             Find our product
           </a>
         </div>
@@ -179,7 +179,7 @@ function HomePage() {
             </div>
           </div>
         </section>
-        <section className='section-tours'>
+        <section className='section-tours' id='section-tours'>
           <div className='u-center-text u-margin-bottom-big'>
             <h2 className='heading-secondary'>MOst popular tours</h2>
           </div>
@@ -210,7 +210,7 @@ function HomePage() {
                       <p className='card__price-only'>Only</p>
                       <p className='card__price-value'>$297</p>
                     </div>
-                    <a href='#' className='btn btn--white'>
+                    <a href='#popup' className='btn btn--white'>
                       Book now!
                     </a>
                   </div>
@@ -243,7 +243,7 @@ function HomePage() {
                       <p className='card__price-only'>Only</p>
                       <p className='card__price-value'>$497</p>
                     </div>
-                    <a href='#' className='btn btn--white'>
+                    <a href='#popup' className='btn btn--white'>
                       Book now!
                     </a>
                   </div>
@@ -276,7 +276,7 @@ function HomePage() {
                       <p className='card__price-only'>Only</p>
                       <p className='card__price-value'>$897</p>
                     </div>
-                    <a href='#' className='btn btn--white'>
+                    <a href='#popup' className='btn btn--white'>
                       Book now!
                     </a>
                   </div>
@@ -473,7 +473,7 @@ function HomePage() {
               Built my{' '}
               <a href='#' className='footer__link'>
                 Asif
-              </a>{' '}
+              </a>
               for learning purpose
               <a href='#' className='footer__link'>
                 Advanced css and sass.
@@ -483,6 +483,47 @@ function HomePage() {
           </div>
         </div>
       </footer>
+
+      <div className='popup' id='popup'>
+        <div className='popup__content'>
+          <div className='popup__left'>
+            <img
+              src='../assets/nat-8.jpg'
+              alt='Tour pic'
+              className='popup__img'
+            />
+            <img
+              src='../assets/nat-9.jpg'
+              alt='Tour pic'
+              className='popup__img'
+            />
+          </div>
+          <div className='popup__right'>
+            <h2 className='heading-secondary u-margin-bottom-small'>
+              Start booking now
+            </h2>
+            <h3 className='heading-tertiary u-margin-bottom-small'>
+              Important &ndash; Please read these terms before booking
+            </h3>
+            <p className='popup__text'>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni
+              commodi ducimus dolor natus voluptas omnis, illum nostrum aliquam
+              accusantium unde voluptate ullam nulla iste delectus repellendus
+              ut necessitatibus, quasi quisquam!Lorem Lorem ipsum dolor sit amet
+              consectetur, adipisicing elit. Iste sequi hic, magnam libero,
+              minus quaerat rerum, qui aspernatur culpa similique saepe
+              consectetur numquam aliquid reiciendis ut sed illo officia
+              nesciunt! Lorem ipsum dolor sit amet, consectetur adipisicing
+              elit. Eius eaque autem fuga earum maiores, totam quo sapiente unde
+              dicta porro nulla vel recusandae libero aliquam! Eius facilis
+              maxime voluptatem assumenda!
+            </p>
+            <a href='#' className='btn btn--green'>
+              book now
+            </a>
+          </div>
+        </div>
+      </div>
       {/* <section className='grid-test'>
         <div className='row'>
           <div className='col-1-of-2'>Col 1 of 2</div>
