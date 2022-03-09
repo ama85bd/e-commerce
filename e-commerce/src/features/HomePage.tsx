@@ -499,6 +499,9 @@ function HomePage() {
             />
           </div>
           <div className='popup__right'>
+            <a href='#section-tours' className='popup__close'>
+              &times;
+            </a>
             <h2 className='heading-secondary u-margin-bottom-small'>
               Start booking now
             </h2>
