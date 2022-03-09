@@ -107,8 +107,32 @@ function HomePage() {
               to get 3 img at one tab from emment
               .composition>(img.composition__photo.composition__photo--p1)*3 
               */}
+
               <div className='composition'>
                 <img
+                  srcSet='../assets/nat-1.jpg 300w, ../assets/nat-1-large.jpg 1000w'
+                  sizes=' (max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px'
+                  alt='Ph 1'
+                  className='composition__photo composition__photo--p1'
+                  src='img/nat-1-large.jpg'
+                />
+
+                <img
+                  srcSet='../assets/nat-2.jpg 300w, ../assets/nat-2-large.jpg 1000w'
+                  sizes=' (max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px'
+                  alt='Ph 1'
+                  className='composition__photo composition__photo--p2'
+                  src='img/nat-2-large.jpg'
+                />
+
+                <img
+                  srcSet='../assets/nat-3.jpg 300w, ../assets/nat-3-large.jpg 1000w'
+                  sizes=' (max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px'
+                  alt='Ph 1'
+                  className='composition__photo composition__photo--p3'
+                  src='img/nat-3-large.jpg'
+                />
+                {/* <img
                   src='../assets/nat-1-large.jpg'
                   alt='Ph 1'
                   className='composition__photo composition__photo--p1'
@@ -122,7 +146,7 @@ function HomePage() {
                   src='../assets/nat-3-large.jpg'
                   alt='Ph 3'
                   className='composition__photo composition__photo--p3'
-                />
+                /> */}
               </div>
             </div>
           </div>
@@ -428,13 +452,18 @@ function HomePage() {
         </section>
       </main>
 
-      <footer className='footer'>
+      {/* <footer className='footer'>
         <div className='footer__logo-box'>
-          <img
-            src='../assets/logo-green-2x.png'
-            alt='Full logo'
-            className='footer__logo'
-          />
+          <picture className='footer__logo'>
+            <source
+              srcSet='../assets/logo-green-small-1x.png 1x, ../assets/logo-green-small-2x.png 2x'
+              media='(max-width: 37.5em)'
+            />
+            <img
+              srcSet='../assets/logo-green-1x.png 1x, ../assets/logo-green-2x.png 2x'
+              alt='Full logo'
+            />
+          </picture>
         </div>
         <div className='row'>
           <div className='col-1-of-2'>
@@ -482,7 +511,7 @@ function HomePage() {
             </p>
           </div>
         </div>
-      </footer>
+      </footer> */}
 
       <div className='popup' id='popup'>
         <div className='popup__content'>

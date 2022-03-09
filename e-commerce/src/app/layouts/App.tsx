@@ -1,4 +1,5 @@
 import React from 'react';
+import FooterPage from '../../features/Footer';
 import HomePage from '../../features/HomePage';
 import Navbar from './Navbar';
 
@@ -7,6 +8,7 @@ function App() {
     <div className='App'>
       {/* <Navbar /> */}
       <HomePage />
+      <FooterPage />
     </div>
   );
 }
