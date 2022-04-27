@@ -1014,7 +1014,8 @@ body {
   display: inline-block;
   background-color: black;
   padding: 2px;
-
+  height: 28px;
+  width: 65px;
   -webkit-clip-path: polygon(0 0, 55% 0, 100% 48%, 100% 99%, 0 99%);
   clip-path: polygon(0 0, 55% 0, 100% 48%, 100% 99%, 0 99%);
   /* padding: 5px 0 5px 10px; */
@@ -1036,6 +1037,8 @@ body {
   display: inline-block;
   background-color: black;
   padding: 2px;
+  height: 28px;
+  width: 65px;
   -webkit-clip-path: polygon(0 48%, 45% 0, 100% 3%, 100% 99%, 0 99%);
   clip-path: polygon(0 48%, 45% 0, 100% 3%, 100% 99%, 0 99%);
   /* padding: 5px 0 5px 10px; */
@@ -1060,10 +1063,11 @@ body {
   margin-top: 20px;
 }
 .fromTilt {
-  width: 30px;
+  width: 130px;
   height: 2px;
   background-color: black;
-  margin-top: 20px;
+  margin-top: 76px;
+  margin-left: -32px;
   transform: rotate(59deg);
 }
 
