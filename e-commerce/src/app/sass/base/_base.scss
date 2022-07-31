@@ -1,0 +1,24 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  /* rem is related with root font size where 1rem = 16px
+     so here we change it to 10px i.e 1rem=10px now
+     so we can change only one place when we need in media query
+     why 10px because it can calculate easily with 10px rather 
+     than calculating with 16px
+     --
+     here we should not use directly 10px
+     10/16*100 = 62.5% === 10px
+  */
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+}
