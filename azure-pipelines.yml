@@ -4,16 +4,23 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
 
 trigger:
-- main
+- master
 
 variables:
-   uiSource:'src'
-   uiBuild:'$(uiSource)/build'
+  uiSource: 'src'
+  uiBuild: '$(uiSource)/build'
 
 pool:
-  vmImage: ubuntu-latest
+  vmImage: 'ubuntu-latest'
 
 steps:
+- task: CmdLine@2
+  inputs:
+    script: |
+      echo Replace Index.html
+      pushd $(uiSource)/public
+      mv index.release.html index.html
+      popd
 - task: NodeTool@0
   inputs:
     versionSpec: '10.x'
@@ -39,4 +46,3 @@ steps:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
     ArtifactName: 'drop'
     publishLocation: 'Container'
-
