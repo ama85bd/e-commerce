@@ -11,7 +11,7 @@ function HomePage() {
     3. heading-primary--main so --main is a modifier
     */
     <div>
-      <div className='risk-assesment-diagram'>
+      {/* <div className='risk-assesment-diagram'>
         <div className='riskassesFrom'>
           <div className='riskassesFromInner'>
             <p>"From"</p>
@@ -24,7 +24,7 @@ function HomePage() {
             <p>"To"</p>
           </div>
         </div>
-      </div>
+      </div> */}
       <div className='navigation'>
         <input
           type='checkbox'
